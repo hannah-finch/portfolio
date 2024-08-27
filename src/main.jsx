@@ -6,14 +6,14 @@ import { StrictMode } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App.jsx'
-import './index.css'
+import './assets/css/index.css'
 
 // Import pages
-import Error from './pages/error/error.jsx'
-import About from './pages/about/about.jsx'
-import Portfolio from './pages/portfolio/portfolio.jsx'
-import Contact from './pages/contact/contact.jsx'
-import Resume from './pages/resume/resume.jsx'
+import Error from './pages/error.jsx'
+import About from './pages/about.jsx'
+import Portfolio from './pages/portfolio.jsx'
+import Contact from './pages/contact.jsx'
+import Resume from './pages/resume.jsx'
 
 
 const router = createBrowserRouter([

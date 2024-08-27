@@ -1,4 +1,4 @@
-import './resume.css'
+import '../assets/css/resume.css'
 
 // Resume section = link to download resume and list of my proficiencies
 

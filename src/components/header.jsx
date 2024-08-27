@@ -1,4 +1,4 @@
-import './header.css'
+import '../assets/css/header.css'
 
 // Will use Link components from react-router-dom to conditionally render the different sections
 // Click a link = highlight active link, url changes, corresponding section displays

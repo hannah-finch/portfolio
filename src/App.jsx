@@ -2,10 +2,10 @@
 
 import { Outlet } from 'react-router-dom';
 
-import Header from './components/header/header.jsx'
-import Footer from './components/footer/footer.jsx'
+import Header from './components/header.jsx'
+import Footer from './components/footer.jsx'
 
-import './App.css'
+import './assets/css/App.css'
 
 function App() {
 
