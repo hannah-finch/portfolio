@@ -8,13 +8,12 @@ function Header() {
     <header>
       <h1>Header</h1>
       <nav>
-        <li>About Me</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
-        <li>Resume</li>
+        <a href='/about'><li>About Me</li></a>
+        <a href='/portfolio'><li>Portfolio</li></a>
+        <a href='/contact'><li>Contact</li></a>
+        <a href='/resume'><li>Resume</li></a>
       </nav>
     </header>
-
   )
 }
 
