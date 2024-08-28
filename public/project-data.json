@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "id": 1,
+      "id": 0,
       "name": "Project 1",
       "short-description": "",
       "long-description": "",
@@ -15,7 +15,7 @@
       "image2": ""
     },
     {
-      "id": 2,
+      "id": 1,
       "name": "Project 2",
       "short-description": "",
       "long-description": "",

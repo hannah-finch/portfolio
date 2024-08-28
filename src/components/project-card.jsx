@@ -13,7 +13,7 @@ function ProjectCard() {
           </p>
           <Link to={`/project/${project.id}`}>
             Project Page
-          </Link>  
+          </Link>
         </>
       ))}
     </>
