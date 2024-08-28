@@ -1,8 +1,5 @@
 import ReactDOM from 'react-dom/client';
-
 import { StrictMode } from 'react'
-// import { createRoot } from 'react-dom/client'
-
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App.jsx'
@@ -14,6 +11,7 @@ import About from './pages/about.jsx'
 import Portfolio from './pages/portfolio.jsx'
 import Contact from './pages/contact.jsx'
 import Resume from './pages/resume.jsx'
+import ProjectPage from './pages/project-page.jsx'
 
 
 const router = createBrowserRouter([
@@ -42,6 +40,10 @@ const router = createBrowserRouter([
         path: '/resume',
         element: <Resume />,
       },
+      {
+        path: '/project/:id',
+        element: <ProjectPage />
+      }
     ],
   },
 ]);

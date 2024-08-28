@@ -1,4 +1,5 @@
 import '../assets/css/header.css'
+import { Link } from 'react-router-dom';
 
 // Will use Link components from react-router-dom to conditionally render the different sections
 // Click a link = highlight active link, url changes, corresponding section displays
@@ -8,10 +9,10 @@ function Header() {
     <header>
       <h1>Header</h1>
       <nav>
-        <a href='/about'><li>About Me</li></a>
-        <a href='/portfolio'><li>Portfolio</li></a>
-        <a href='/contact'><li>Contact</li></a>
-        <a href='/resume'><li>Resume</li></a>
+        <Link to={'/about'}>About Me</Link>
+        <Link to={'/portfolio'}>Portfolio</Link>
+        <Link to={'/contact'}>Contact</Link>
+        <Link to={'/resume'}>Resume</Link>
       </nav>
     </header>
   )

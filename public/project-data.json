@@ -2,15 +2,31 @@
   "projects": [
     {
       "id": 1,
-      "name": "Project Name"
+      "name": "Project 1",
+      "short-description": "",
+      "long-description": "",
+      "contribution": "",
+      "technologies": "",
+      "deployed": "",
+      "github": "",
+      "start-date": "",
+      "end-date": "",
+      "image1": "",
+      "image2": ""
     },
     {
       "id": 2,
-      "name": "Another Project"
-    },
-    {
-      "id": 3,
-      "name": "Third Project"
+      "name": "Project 2",
+      "short-description": "",
+      "long-description": "",
+      "contribution": "",
+      "technologies": "",
+      "deployed": "",
+      "github": "",
+      "start-date": "",
+      "end-date": "",
+      "image1": "",
+      "image2": ""
     }
   ]
 }
