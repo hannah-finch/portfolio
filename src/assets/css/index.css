@@ -2,14 +2,14 @@
 
 :root {
   --light: #ffffff;
-  --dark: #1f1f36;
+  --dark: #0d0b25;
   --blue: #80b1e3;
   --teal: #009999;
   --green: #828835;
   --red: #660033;
   /* The following colors change in light mode */
-  --bg: #16142b; 
-  --bg-dim: #1f1f36;
+  --bg: #0d0b25; 
+  --bg-dim: #191937;
   --bg-shadow: #05050a;
   --text: #ffffff;
 }
@@ -24,11 +24,23 @@ body {
 }
 
 h1 {
-  font-size: 160%;
+  font-size: 120%;
 }
 
 h2, h3 {
   font-family: 'Martian Mono', monospace;
+}
+
+.teal {
+  color: var(--teal);
+}
+
+.green {
+  color: var(--green);
+}
+
+.shadow1 {
+  box-shadow: 0 0 5px var(--bg-shadow);
 }
 
 /* Button Styles --------------------------------- */
@@ -36,6 +48,32 @@ h2, h3 {
 
 
 /* Header Styles --------------------------------- */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-dim);
+  height: 40px;
+  padding: 10px 5% 0;
+}
+
+nav {
+  font-family: 'Martian Mono', monospace;
+  font-size: 12px;
+}
+
+nav a {
+  padding: 6px 0px;
+  margin: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  transition: .2s;
+}
+
+nav a:hover, .active-link {
+  /* transition: 2s; */
+  border-bottom: 2px solid white;
+}
 
 
 
