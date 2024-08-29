@@ -1,2 +1,10 @@
-/* Homepage Stylesheet ------------------ */
-/* (Probably won't need this since it's single page and I have App.css */
+/* Universal Stylesheet ------------------------------ */
+
+/* Just here so I can see the CSS is connected */
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+/* app css won't apply to error? */

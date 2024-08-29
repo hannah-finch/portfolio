@@ -3,30 +3,30 @@
     {
       "id": 0,
       "name": "Project 1",
-      "short-description": "",
-      "long-description": "",
-      "contribution": "",
-      "technologies": "",
-      "deployed": "",
-      "github": "",
-      "start-date": "",
-      "end-date": "",
-      "image1": "",
-      "image2": ""
+      "shortDescription": "Short description",
+      "longDescription": "Long description",
+      "contribution": "Specific contribution",
+      "technologies": "Technologies used",
+      "deployed": "Deployed link",
+      "github": "GitHub link",
+      "startDate": "Start date",
+      "endDate": "End date",
+      "image1": "Image 1 source",
+      "image2": "Image 2 source"
     },
     {
       "id": 1,
       "name": "Project 2",
-      "short-description": "",
-      "long-description": "",
-      "contribution": "",
-      "technologies": "",
-      "deployed": "",
-      "github": "",
-      "start-date": "",
-      "end-date": "",
-      "image1": "",
-      "image2": ""
+      "shortDescription": "Short description",
+      "longDescription": "Long description",
+      "contribution": "Specific contribution",
+      "technologies": "Technologies used",
+      "deployed": "Deployed link",
+      "github": "GitHub link",
+      "startDate": "Start date",
+      "endDate": "End date",
+      "image1": "Image 1 source",
+      "image2": "Image 2 source"
     }
   ]
 }

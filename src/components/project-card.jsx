@@ -7,14 +7,13 @@ function ProjectCard() {
   return (
     <>
       {projectData.projects.map(project => (
-        <>
-          <p key={project.id}>
-            {project.name} and {project.id}
-          </p>
-          <Link to={`/project/${project.id}`}>
-            Project Page
-          </Link>
-        </>
+        
+        <Link to={`/project/${project.id}`} key={project.id}>
+          
+          {project.name}<br></br>
+        
+        </Link>
+        
       ))}
     </>
   )

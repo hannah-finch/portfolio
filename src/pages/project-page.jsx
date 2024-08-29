@@ -15,7 +15,17 @@ function ProjectPage() {
   return (
     <>
       <h1>Project Page</h1>
-      <h1>{project.name}</h1>
+      {project.name}
+      {project.shortDescription}
+      {project.longDescription}
+      {project.contribution}
+      {project.technologies}
+      {project.deployed}
+      {project.github}
+      {project.startDate}
+      {project.endDate}
+      {project.image1}
+      {project.image2}
     </>
   )
 }
