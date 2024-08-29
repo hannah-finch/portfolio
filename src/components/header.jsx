@@ -6,7 +6,9 @@ import { NavLink } from 'react-router-dom';
 function Header() {
   return (
     <header className="shadow1">
-      <h1><span className="teal">Hannah Belle</span> : <span className="green">Full-Stack Developer</span></h1>
+      <h1><span className="teal">Hannah Belle</span>
+       {/* : <span className="green">Full-Stack Developer</span> */}
+       </h1>
       <nav>
         <NavLink to={'/about'}className={({ isActive }) => (isActive ? "active-link" : "normal-link")}>
           .about()

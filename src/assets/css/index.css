@@ -9,7 +9,7 @@
   --red: #660033;
   /* The following colors change in light mode */
   --bg: #0d0b25; 
-  --bg-dim: #191937;
+  --bg-dim: #161338;
   --bg-shadow: #05050a;
   --text: #ffffff;
 }
@@ -24,11 +24,20 @@ body {
 }
 
 h1 {
-  font-size: 120%;
+  /* font-size: 100%; */
+}
+
+h1, h2, h3 {
+  font-family: 'Martian Mono', monospace;
+  line-height: 1.4;
 }
 
 h2, h3 {
-  font-family: 'Martian Mono', monospace;
+  font-size: 14px;
+}
+
+h3 {
+  color: var(--blue);
 }
 
 .teal {
@@ -54,8 +63,8 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: var(--bg-dim);
-  height: 40px;
-  padding: 10px 5% 0;
+  /* height: 40px; */
+  padding: 16px 5% 10px;
 }
 
 nav {

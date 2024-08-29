@@ -1,0 +1,16 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero img {
+  max-width: 220px;
+  flex-shrink: 7;
+}
+
+.hero h2 {
+  margin: 0px 20px 40px;
+  flex-shrink: 0;
+}
