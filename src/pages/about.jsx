@@ -5,7 +5,10 @@ import '../assets/css/about.css'
 
 function About() {
   return (
+    <>
     <h1>About</h1>
+
+    </>
   )
 }
 

@@ -6,8 +6,8 @@
 }
 
 .hero img {
+  width: 100%;
   max-width: 220px;
-  flex-shrink: 7;
 }
 
 .hero h2 {

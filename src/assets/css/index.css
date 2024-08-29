@@ -9,8 +9,8 @@
   --red: #660033;
   /* The following colors change in light mode */
   --bg: #0d0b25; 
-  --bg-dim: #161338;
-  --bg-shadow: #05050a;
+  --bg-dim: #16142c;
+  --bg-shadow: #00001e55;
   --text: #ffffff;
 }
 
@@ -21,6 +21,11 @@ body {
   color: var(--text);
   font-family: Quicksand, Helvetica, sans-serif;
   font-size: 18px;
+}
+
+main {
+  /* subtract height of header and footer, pushes footer to bottom */
+  min-height: calc(100vh - 300px);
 }
 
 h1 {
@@ -63,8 +68,8 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: var(--bg-dim);
-  /* height: 40px; */
-  padding: 16px 5% 10px;
+  height: 50px;
+  padding: 10px 5% 0px;
 }
 
 nav {
@@ -80,10 +85,21 @@ nav a {
 }
 
 nav a:hover, .active-link {
-  /* transition: 2s; */
   border-bottom: 2px solid white;
 }
 
 
-
 /* Footer Styles --------------------------------- */
+
+footer {
+  height: 250px;
+  background-color: var(--bg-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer img {
+  width: 60px;
+  margin: 6px;
+}
