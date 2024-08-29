@@ -1,5 +1,3 @@
-import '../assets/css/footer.css'
-
 // text or icon links to GitHub, LinkedIn, and third platform... (Stack Overflow, Twitter, Instagram)
 function Footer() {
   return (

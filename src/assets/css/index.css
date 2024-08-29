@@ -1,10 +1,42 @@
-/* Universal Stylesheet ------------------------------ */
+/* Universal Stylesheet ------------------------- */
 
-/* Just here so I can see the CSS is connected */
-body {
-  background-color: #000000;
-  color: #ffffff;
+:root {
+  --light: #ffffff;
+  --dark: #1f1f36;
+  --blue: #80b1e3;
+  --teal: #009999;
+  --green: #828835;
+  --red: #660033;
+  /* The following colors change in light mode */
+  --bg: #16142b; 
+  --bg-dim: #1f1f36;
+  --bg-shadow: #05050a;
+  --text: #ffffff;
 }
 
+/* General Styles ------------------------------- */
 
-/* app css won't apply to error? */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Quicksand, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 160%;
+}
+
+h2, h3 {
+  font-family: 'Martian Mono', monospace;
+}
+
+/* Button Styles --------------------------------- */
+
+
+
+/* Header Styles --------------------------------- */
+
+
+
+/* Footer Styles --------------------------------- */

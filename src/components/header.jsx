@@ -1,4 +1,3 @@
-import '../assets/css/header.css'
 import { Link } from 'react-router-dom';
 
 // Will use Link components from react-router-dom to conditionally render the different sections
