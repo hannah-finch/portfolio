@@ -36,7 +36,6 @@ h1 {
 h1, h2, h3 {
   font-family: 'Martian Mono', monospace;
   line-height: 1.4;
-
 }
 
 h2, h3 {
@@ -115,6 +114,36 @@ p {
   border-radius: 40px;
   margin: 25px 0;
   padding: 40px;
+}
+
+/* Animation Styles ------------------------------ */
+
+/* don't apply animations if user enabled "reduce motion" */
+@media (prefers-reduced-motion: no-preference) {
+
+  .type-out {
+    animation: type-out 1.5s steps(60, end);
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  @keyframes type-out { 
+    from { width: 0; } 
+  }
+  
+  .delay-animation {
+    animation-name: delay-animation;
+    animation-duration: .8s; 
+  }
+  
+  @keyframes delay-animation {
+    0%, 50%  { 
+      opacity: 0;
+      transform: translateY(10%)
+    }
+  }
+
 }
 
 /* Header Styles --------------------------------- */

@@ -4,7 +4,14 @@ import '../assets/css/contact.css'
 
 function Contact() {
   return (
-    <h1>Contact</h1>
+    <>
+    <h2 className="nudge-right type-out">hannahBelle.<span className="teal">contact</span>();</h2>
+    
+    <section className="text-box shadow1 delay">
+      <h3>Something</h3>
+    </section>  
+    
+    </>
   )
 }
 

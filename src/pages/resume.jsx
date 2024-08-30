@@ -4,7 +4,14 @@ import '../assets/css/resume.css'
 
 function Resume() {
   return (
-    <h1>Resume</h1>
+    <>
+    <h2 className="nudge-right type-out">hannahBelle.<span className="teal">resume</span>();</h2>
+    
+    <section className="text-box shadow1 delay">
+      <h3>Something</h3>
+    </section>  
+    
+    </>
   )
 }
 

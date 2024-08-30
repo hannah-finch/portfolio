@@ -10,6 +10,10 @@ function ProjectCard() {
         
         <Link to={`/project/${project.id}`} key={project.id}>
           
+          <section className="card">
+
+            
+          </section>
           {project.name}<br></br>
         
         </Link>

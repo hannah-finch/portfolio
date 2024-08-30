@@ -7,9 +7,13 @@ import ProjectCard from '../components/project-card.jsx'
 function Portfolio() {
   return (
     <>
-      <h1>Portfolio</h1>
+    <h2 className="nudge-right type-out">hannahBelle.<span className="teal">portfolio</span>();</h2>
+    
+    <section className="text-box shadow1 delay">
+      <h3>My Work:</h3>
       <ProjectCard />
-     
+    </section>  
+
     </>
   )
 }
