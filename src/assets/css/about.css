@@ -1,0 +1,15 @@
+.skills-section {
+  display: flex;
+  align-items: flex-start;
+  
+}
+
+.skills-section img {
+  width: 30%;
+  border-radius: 30px;
+  margin: 25px;
+}
+
+.skills-container {
+  flex-grow: 1;
+}

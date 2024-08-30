@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
-    <header className="shadow1">
+    <header className="shadow2">
       <h1><span className="teal">Hannah Belle</span>
        {/* : <span className="green">Full-Stack Developer</span> */}
        </h1>

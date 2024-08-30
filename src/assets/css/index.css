@@ -1,7 +1,7 @@
 /* Universal Stylesheet ------------------------- */
 
 :root {
-  --light: #ffffff;
+  --light: #ebebeb;
   --dark: #0d0b25;
   --blue: #80b1e3;
   --teal: #009999;
@@ -10,8 +10,8 @@
   /* The following colors change in light mode */
   --bg: #0d0b25; 
   --bg-dim: #16142c;
-  --bg-shadow: #00001e55;
-  --text: #ffffff;
+  --bg-shadow: #0600126a;
+  --text: #ebebeb;
 }
 
 /* General Styles ------------------------------- */
@@ -36,6 +36,7 @@ h1 {
 h1, h2, h3 {
   font-family: 'Martian Mono', monospace;
   line-height: 1.4;
+
 }
 
 h2, h3 {
@@ -72,7 +73,11 @@ p {
 }
 
 .shadow1 {
-  box-shadow: 0 0 5px var(--bg-shadow);
+  box-shadow: 0 0 6px var(--bg-shadow);
+}
+
+.shadow2 {
+  box-shadow: 0 0 36px var(--bg-shadow);
 }
 
 .btn-green, .btn-red, .btn-teal {

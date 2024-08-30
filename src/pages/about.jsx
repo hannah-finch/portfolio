@@ -9,8 +9,9 @@ function About() {
   return (
     <>
     <h2 className="nudge-right">hannahBelle.<span className="teal">about</span>();</h2>
-    <div className="text-box shadow 1">
-      <h3>I'm a full-stack developer who loves a challenge</h3>
+    
+    <section className="text-box shadow1">
+      <h3>I’m a full-stack developer who loves a challenge</h3>
       <p>
         My dad once joked that while other kids were learning their ABC’s from Sesame Street, I was mastering mine on a keyboard.  Computers gave me limitless resources and endless possibilities.  Unlike the physical world, where materials could run out, in the digital world, I was only limited by ideas – and I had a lot of ideas.
       </p>
@@ -20,14 +21,42 @@ function About() {
       <p>
         Now, I’m focused on earning certification so I can help bring other’s ideas to life in the limitless digital world. 
       </p>
-    </div>
+    </section>
+
     <div className="spacer"></div>
-    <div className="btn-container">
+
+    <section className="btn-container">
       <Link className="btn-green shadow1" to="/portfolio">.portfolio()</Link>
       <Link  className="btn-red shadow1"to="/contact">.contact()</Link>
       <Link className="btn-teal shadow1" to="/resume">.resume()</Link>
-    </div>
+    </section>
+
     <div className="spacer"></div>
+
+    <section className="skills-section">
+      <img src="./images/portrait.jpg" className="shadow1"></img>
+      <div className="text-box shadow1 skills-container">
+        {/* TODO: change this to icons, edit skills, add design skills, other tech programs/skills like github, figma*/}
+        <h3>front-end skills:</h3>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+          <li>Responsive Design</li>
+          <li>React</li>
+          <li>Bootstrap</li>
+          <li>Tailwind</li>
+        <h3>back-end skills:</h3>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+          <li>Responsive Design</li>
+          <li>React</li>
+          <li>Bootstrap</li>
+          <li>Tailwind</li>
+      </div>
+    </section>
     </>
     
   )
