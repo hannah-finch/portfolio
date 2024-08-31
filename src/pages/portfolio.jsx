@@ -9,11 +9,18 @@ function Portfolio() {
     <>
     <h2 className="nudge-right type-out">hannahBelle.<span className="teal">portfolio</span>();</h2>
     
-    <section className="text-box shadow1 delay">
+    <section className="delay">
+
+    <section className="text-box shadow1">
       <h3>My Work:</h3>
-      <ProjectCard />
+
+      <section className="grid">
+        <ProjectCard />
+      </section>
+
     </section>  
 
+    </section>
     </>
   )
 }

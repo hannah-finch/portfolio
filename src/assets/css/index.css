@@ -7,6 +7,7 @@
   --teal: #009999;
   --green: #828835;
   --red: #660033;
+  --light-shadow: #2d2d2d62;
   /* The following colors change in light mode */
   --bg: #0d0b25; 
   --bg-dim: #16142c;
@@ -24,8 +25,6 @@ body {
 }
 
 main {
-  /* subtract height of header and footer, pushes footer to bottom */
-  min-height: calc(100vh - 300px);
   margin: 0 10%;
 }
 
@@ -79,16 +78,27 @@ p {
   box-shadow: 0 0 36px var(--bg-shadow);
 }
 
+.shadow3 {
+  box-shadow: 0 0 5px var(--light-shadow);
+}
+
 .btn-green, .btn-red, .btn-teal {
-  padding: 8px 24px;
-  margin: 6px;
+  /* padding: 8px 24px; */
+  width: 140px;
+  height: 30px;
+  margin: 12px;
   border-radius: 3px;
-  border-bottom: 2px solid #00000000;
+  display:flex;
+  align-items: center;
+  justify-content: center;
   transition: .3s;
 }
 
 .btn-green:hover, .btn-red:hover, .btn-teal:hover {
-  border-color: var(--text);
+  width: 150px;
+  height: 36px;
+  margin: 7px;
+
 }
 
 .btn-green {
@@ -107,6 +117,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 40px;
 }
 
 .text-box {
@@ -122,25 +133,25 @@ p {
 @media (prefers-reduced-motion: no-preference) {
 
   .type-out {
-    animation: type-out 1.5s steps(60, end);
+    animation: type-out .8s steps(26, end);
     white-space: nowrap;
     overflow: hidden;
-    width: 100%;
+    width: 256px;
   }
   
   @keyframes type-out { 
     from { width: 0; } 
   }
   
-  .delay-animation {
+  .delay {
     animation-name: delay-animation;
-    animation-duration: .8s; 
+    animation-duration: 1s; 
   }
   
   @keyframes delay-animation {
-    0%, 50%  { 
+    0%, 75%  { 
       opacity: 0;
-      transform: translateY(10%)
+      transform: translateY(4vh)
     }
   }
 

@@ -5,13 +5,22 @@ import '../assets/css/about.css';
 // on first load, About me title and section should be selected by default
 // About me section = photo and bio
 
+
+/*
+
+{`class ${literal}`}
+
+*/
+
 function About() {
 
   return (
     <>
     <h2 className="nudge-right type-out">hannahBelle.<span className="teal">about</span>();</h2>
     
-    <section className="text-box shadow1 delay-animation">
+    <section className="delay">
+
+    <section className="text-box shadow1">
       <h3>I’m a full-stack developer who loves a challenge</h3>
       <p>
         My dad once joked that while other kids were learning their ABC’s from Sesame Street, I was mastering mine on a keyboard.  Computers gave me limitless resources and endless possibilities.  Unlike the physical world, where materials could run out, in the digital world, I was only limited by ideas – and I had a lot of ideas.
@@ -34,7 +43,7 @@ function About() {
 
     <div className="spacer"></div>
 
-    <section className="skills-section delay">
+    <section className="skills-section">
       <img src="./images/portrait.jpg" className="shadow1"></img>
       <div className="text-box shadow1 skills-container">
         {/* TODO: change this to icons, edit skills, add design skills, other tech programs/skills like github, figma*/}
@@ -57,6 +66,8 @@ function About() {
           <li>Bootstrap</li>
           <li>Tailwind</li>
       </div>
+    </section>
+    
     </section>
     </>
     

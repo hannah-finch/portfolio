@@ -7,9 +7,13 @@ function Resume() {
     <>
     <h2 className="nudge-right type-out">hannahBelle.<span className="teal">resume</span>();</h2>
     
-    <section className="text-box shadow1 delay">
+    <section className="delay">
+
+    <section className="text-box shadow1">
       <h3>Something</h3>
     </section>  
+    
+    </section>
     
     </>
   )

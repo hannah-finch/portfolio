@@ -6,17 +6,38 @@ function ProjectCard() {
   // map through projects in data to render info on cards
   return (
     <>
+    
       {projectData.projects.map(project => (
         
-        <Link to={`/project/${project.id}`} key={project.id}>
+        <div key={project.id} className="card shadow1">
           
-          <section className="card">
+          <div>
+            <div className="img-box shadow3" style={{ backgroundImage: `url(${project.image1})` }}>
+            </div>
+            <h3>{project.name}</h3>
+            <p>{project.shortDescription}</p>
+          </div>
 
-            
-          </section>
-          {project.name}<br></br>
+          <Link to={`/project/${project.id}`} className="details-btn">Details --></Link>
+        </div>
+
+
+
+
+
+        // <Link to={`/project/${project.id}`} key={project.id} className="card">
+          
+
+        //   <section className="">
+        //     <img src={project.image1}></img>
+        //     <h3>{project.name}</h3>
+        //     <p>{project.shortDescription}</p>
+
+        //     <Link className="btn-red">.more()</Link>
+        //   </section>
+        //   <div className="inspect"></div>
         
-        </Link>
+        // </Link>
         
       ))}
     </>
