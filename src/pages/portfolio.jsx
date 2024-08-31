@@ -12,11 +12,13 @@ function Portfolio() {
     <section className="delay">
 
     <section className="text-box shadow1">
-      <h3>My Work:</h3>
-
       <section className="grid">
         <ProjectCard />
       </section>
+
+      <a className="github-link" href='https://github.com/hannahschwen' target="_blank">
+        View more work on GitHub -->
+      </a>
 
     </section>  
 

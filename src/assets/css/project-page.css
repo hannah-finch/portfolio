@@ -5,3 +5,20 @@
 .flex img {
   width: 50%;
 }
+
+.info-container {
+  display: grid;
+  grid-template-columns: auto 40%;
+  gap: 50px;
+}
+
+.text-group {
+
+}
+
+.btn-container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 16px;
+  margin-top: 20px
+}

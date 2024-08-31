@@ -1,3 +1,5 @@
+// LOOK UP: React link to top of page (currently links leave page scrolled when new content is shown, since it's technically single page)
+
 import { useParams } from 'react-router-dom';
 
 import '../assets/css/project-page.css'
@@ -20,19 +22,37 @@ function ProjectPage() {
 
       <section className="delay">
 
-      <section className="text-box">
-        <h3>{project.name}</h3>
-        <p><span className="h2 green">Date: </span>{project.startDate} - {project.endDate}</p>
-        <p><span className="h2 green">Objective: </span>{project.objective}</p>
-        <p><span className="h2 green">Technologies: </span>{project.technologies}</p>
-        <p><span className="h2 green">My Contribution: </span>{project.contribution}</p>
+      <section className="text-box shadow1">
+        <div className="info-container">
+          <div className="text-group">
+            <h1>{project.name}</h1>
+            <p>{project.longDescription}</p>
+          </div>
+          <div className="text-group">
+            <h3>Details:</h3>
+            <p><span className="h2 green">Date: </span>{project.startDate} - {project.endDate}</p>
+            <p><span className="h2 green">Objective: <br></br></span>{project.objective}asdf asdf asd fasdf a sdfasd asdf asdfas</p>
+            <p><span className="h2 green">Technologies: <br></br></span>{project.technologies} sadf sdfa sdfasdfasd</p>
+            <p><span className="h2 green">My Contribution: <br></br></span>{project.contribution}asdfasdfasdf asd fasd asdfasdf asd sda f</p>
+          </div>
+        </div>
+
+        <div className="btn-container2">
+          <a className="github-link" href='https://github.com/hannahschwen' target="_blank">
+          Deployed Application
+          </a>
+          <a className="github-link" href='https://github.com/hannahschwen' target="_blank">
+          View Code on GitHub -->
+          </a>
+        </div>
+        
       </section>
 
-      <section className="text-box">
-        <div className="flex">
+      <section className="text-box shadow1">
+
           <img src={project.image1}></img>
 
-        </div>
+
         
         <p>{project.longDescription}</p>
 
