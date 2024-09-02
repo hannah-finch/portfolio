@@ -13,7 +13,6 @@ function ProjectPage() {
   // get project data by index = id
   // this is a temporary solution and should be replaced with a method that doesn't require the project id to equal its index in the projectData array
 
-  // maybe add array of additional images to json, map to display them
   const project = projectData.projects[id];
 
   return (
@@ -53,12 +52,17 @@ function ProjectPage() {
       <img className="shadow1 main-img" src={project.image1}></img>
 
       <div className="grid">
+
         {project.moreImages.map(image => {
-          return ( 
-          <>
-            <div className="grid-img" style={{ backgroundImage: `url(${image})` }}></div>
-          </>
-          )
+          if (!image) {
+            return
+          } else {
+            return ( 
+              <>
+                <div className="grid-img" style={{ backgroundImage: `url(${image})` }}></div>
+              </>
+            )
+          }
         })}
       </div>
 

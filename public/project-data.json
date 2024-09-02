@@ -29,52 +29,24 @@
       "startDate": "Start date",
       "endDate": "End date",
       "image1": "https://www.shutterstock.com/image-vector/watercolor-bunny-floral-bouquet-drawn-600nw-2280649077.jpg",
-      "codeImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9gXpKkcMi58nzPQAKULnBiQ37uDkLHG_9JA&s"
+      "codeImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9gXpKkcMi58nzPQAKULnBiQ37uDkLHG_9JA&s",
+      "moreImages": []
     },
     {
       "id": 2,
       "name": "Project 3",
-      "shortDescription": "Short description adslkfjalksdjf alksjd fkljasdj asdkjlajklsdf kjl adkj wdjk sdkj fjsdkf l jaksjdflk alskdfj jkalskd f aslkdjf alksjdf kl aj",
-      "longDescription": "Long description",
-      "objective": "Objective",
-      "contribution": "Specific contribution",
-      "technologies": "Technologies used",
-      "deployed": "https://tech-blog-anf7.onrender.com/",
-      "github": "https://github.com/hannahschwen/tech-blog",
-      "startDate": "Start date",
-      "endDate": "End date",
-      "image1": "https://d2zp5xs5cp8zlg.cloudfront.net/image-53552-800.jpg",
-      "codeImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9gXpKkcMi58nzPQAKULnBiQ37uDkLHG_9JA&s"
-    },
-    {
-      "id": 3,
-      "name": "Project 4",
-      "shortDescription": "Short description",
-      "longDescription": "Long description",
-      "objective": "Objective",
-      "contribution": "Specific contribution",
-      "technologies": "Technologies used",
-      "deployed": "https://tech-blog-anf7.onrender.com/",
-      "github": "https://github.com/hannahschwen/tech-blog",
-      "startDate": "Start date",
-      "endDate": "End date",
-      "image1": "https://d2zp5xs5cp8zlg.cloudfront.net/image-53552-800.jpg",
-      "codeImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9gXpKkcMi58nzPQAKULnBiQ37uDkLHG_9JA&s"
-    },
-    {
-      "id": 4,
-      "name": "Project 5",
-      "shortDescription": "Short description",
-      "longDescription": "Long description",
-      "objective": "Objective",
-      "contribution": "Specific contribution",
-      "technologies": "Technologies used",
-      "deployed": "https://tech-blog-anf7.onrender.com/",
-      "github": "https://github.com/hannahschwen/tech-blog",
-      "startDate": "Start date",
-      "endDate": "End date",
-      "image1": "https://d2zp5xs5cp8zlg.cloudfront.net/image-53552-800.jpg",
-      "codeImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9gXpKkcMi58nzPQAKULnBiQ37uDkLHG_9JA&s"
+      "shortDescription": "",
+      "longDescription": "",
+      "objective": "",
+      "contribution": "",
+      "technologies": [],
+      "deployed": "",
+      "github": "",
+      "startDate": "",
+      "endDate": "",
+      "image1": "",
+      "codeImage": "",
+      "moreImages": []
     }
   ]
 }
