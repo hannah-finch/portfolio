@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 
 function ProjectCard() {
 
- 
-  // map through projects in data to render info on cards
+ // map through projects in data to render info on cards
   return (
     <>
     
@@ -18,7 +17,7 @@ function ProjectCard() {
             <Link to={`/project/${project.id}`}>
               <div
                 className="img2 shadow3"
-                style={{ backgroundImage: `url(${project.image2})` }}>
+                style={{ backgroundImage: `url(${project.codeImage})` }}>
                 <div
                   className="img1"
                   style={{ backgroundImage: `url(${project.image1})` }}>
@@ -29,13 +28,9 @@ function ProjectCard() {
             <p>{project.shortDescription}</p>
           </div>
 
-          <Link to={`/project/${project.id}`} className="details-btn">Details --></Link>
-        </section>
-
-        
+          <Link to={`/project/${project.id}`} className="details-btn">Details --&gt;</Link>
+        </section>      
       ))}
-
-
     </>
   )
 };

@@ -8,12 +8,13 @@
       "objective": "Objective",
       "contribution": "Specific contribution",
       "technologies": "Technologies used",
-      "deployed": "Deployed link",
-      "github": "GitHub link",
+      "deployed": "https://tech-blog-anf7.onrender.com/",
+      "github": "https://github.com/hannahschwen/tech-blog",
       "startDate": "Start date",
       "endDate": "End date",
       "image1": "https://d2zp5xs5cp8zlg.cloudfront.net/image-53552-800.jpg",
-      "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpjs5suAGggZB2Tw6apStxCzbZY6tcD4kfsw&s"
+      "codeImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9gXpKkcMi58nzPQAKULnBiQ37uDkLHG_9JA&s",
+      "moreImages": ["https://bestfriendspetcare.com/wp-content/uploads/2020/06/puppy-play-group-beagle.jpg","https://images.ctfassets.net/sfnkq8lmu5d7/3hILT7sEt4cwqwO4Yfzieo/20c6cefed24161bfd6828742c2728540/The-Wildest_Editorial_Get_Your_Puppy_Off_to_a_Good_Start_Hero.jpg","https://www.puppyschool.co.uk/media/bb89e57566a1e3ef6e76318ee3139adc/terrier-puppy-running-on-grass-outside.jpg","https://royvon.co.uk/wp-content/uploads/2017/06/ChoosingAPuppy.jpg"]
     },
     {
       "id": 1,
@@ -23,12 +24,12 @@
       "objective": "Objective",
       "contribution": "Specific contribution",
       "technologies": "Technologies used",
-      "deployed": "Deployed link",
-      "github": "GitHub link",
+      "deployed": "https://tech-blog-anf7.onrender.com/",
+      "github": "https://github.com/hannahschwen/tech-blog",
       "startDate": "Start date",
       "endDate": "End date",
       "image1": "https://www.shutterstock.com/image-vector/watercolor-bunny-floral-bouquet-drawn-600nw-2280649077.jpg",
-      "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpjs5suAGggZB2Tw6apStxCzbZY6tcD4kfsw&s"
+      "codeImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9gXpKkcMi58nzPQAKULnBiQ37uDkLHG_9JA&s"
     },
     {
       "id": 2,
@@ -38,12 +39,12 @@
       "objective": "Objective",
       "contribution": "Specific contribution",
       "technologies": "Technologies used",
-      "deployed": "Deployed link",
-      "github": "GitHub link",
+      "deployed": "https://tech-blog-anf7.onrender.com/",
+      "github": "https://github.com/hannahschwen/tech-blog",
       "startDate": "Start date",
       "endDate": "End date",
       "image1": "https://d2zp5xs5cp8zlg.cloudfront.net/image-53552-800.jpg",
-      "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpjs5suAGggZB2Tw6apStxCzbZY6tcD4kfsw&s"
+      "codeImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9gXpKkcMi58nzPQAKULnBiQ37uDkLHG_9JA&s"
     },
     {
       "id": 3,
@@ -53,12 +54,12 @@
       "objective": "Objective",
       "contribution": "Specific contribution",
       "technologies": "Technologies used",
-      "deployed": "Deployed link",
-      "github": "GitHub link",
+      "deployed": "https://tech-blog-anf7.onrender.com/",
+      "github": "https://github.com/hannahschwen/tech-blog",
       "startDate": "Start date",
       "endDate": "End date",
       "image1": "https://d2zp5xs5cp8zlg.cloudfront.net/image-53552-800.jpg",
-      "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpjs5suAGggZB2Tw6apStxCzbZY6tcD4kfsw&s"
+      "codeImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9gXpKkcMi58nzPQAKULnBiQ37uDkLHG_9JA&s"
     },
     {
       "id": 4,
@@ -68,12 +69,12 @@
       "objective": "Objective",
       "contribution": "Specific contribution",
       "technologies": "Technologies used",
-      "deployed": "Deployed link",
-      "github": "GitHub link",
+      "deployed": "https://tech-blog-anf7.onrender.com/",
+      "github": "https://github.com/hannahschwen/tech-blog",
       "startDate": "Start date",
       "endDate": "End date",
       "image1": "https://d2zp5xs5cp8zlg.cloudfront.net/image-53552-800.jpg",
-      "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpjs5suAGggZB2Tw6apStxCzbZY6tcD4kfsw&s"
+      "codeImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9gXpKkcMi58nzPQAKULnBiQ37uDkLHG_9JA&s"
     }
   ]
 }

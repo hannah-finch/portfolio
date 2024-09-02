@@ -113,13 +113,18 @@ p {
   background-color: var(--teal);
 }
 
-
-
 .btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto;
+  margin-bottom: 40px;
 }
 
 .text-box {
@@ -134,11 +139,19 @@ p {
 /* don't apply animations if user enabled "reduce motion" */
 @media (prefers-reduced-motion: no-preference) {
 
-  .type-out {
-    animation: type-out .8s steps(26, end);
+  .type-out, .type-out2 {
     white-space: nowrap;
     overflow: hidden;
+  }
+
+  .type-out {
+    animation: type-out .8s steps(26, end);
     width: 256px;
+  }
+
+  .type-out2 {
+    animation: type-out .8s steps(39, end);
+    width: 380px;
   }
   
   @keyframes type-out { 

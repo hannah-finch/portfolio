@@ -18,64 +18,54 @@ function ProjectPage() {
 
   return (
     <>
-      <h2 className="nudge-right type-out">import <span className="teal">projectData</span>;</h2>
+      <h2 className="nudge-right type-out2">import &#123; <span className="teal">project</span> &#125; from &apos;<span className="green">project-data</span>&apos;;</h2>
 
       <section className="delay">
 
       <section className="text-box shadow1">
         <div className="info-container">
-          <div className="text-group">
+          <div>
             <h1>{project.name}</h1>
             <p>{project.longDescription}</p>
           </div>
-          <div className="text-group">
+          <div>
             <h3>Details:</h3>
             <p><span className="h2 green">Date: </span>{project.startDate} - {project.endDate}</p>
-            <p><span className="h2 green">Objective: <br></br></span>{project.objective}asdf asdf asd fasdf a sdfasd asdf asdfas</p>
-            <p><span className="h2 green">Technologies: <br></br></span>{project.technologies} sadf sdfa sdfasdfasd</p>
-            <p><span className="h2 green">My Contribution: <br></br></span>{project.contribution}asdfasdfasdf asd fasd asdfasdf asd sda f</p>
+            <p><span className="h2 green">Objective: <br></br></span>{project.objective}</p>
+            <p><span className="h2 green">Technologies: <br></br></span>{project.technologies}</p>
+            <p><span className="h2 green">My Contribution: <br></br></span>{project.contribution}</p>
           </div>
         </div>
 
         <div className="btn-container2">
-          <a className="github-link" href='https://github.com/hannahschwen' target="_blank">
+          <a className="github-link" href={project.deployed} target="_blank">
           Deployed Application
           </a>
-          <a className="github-link" href='https://github.com/hannahschwen' target="_blank">
-          View Code on GitHub -->
+          <a className="github-link" href={project.github} target="_blank">
+          View Code on GitHub --&gt;
           </a>
         </div>
         
       </section>
 
-      <section className="text-box shadow1">
+      <h3>Screenshots:</h3>
 
-          <img src={project.image1}></img>
+      <img className="shadow1 main-img" src={project.image1}></img>
 
+      <div className="grid">
+        {project.moreImages.map(image => {
+          return ( 
+          <>
+            <div className="grid-img" style={{ backgroundImage: `url(${image})` }}></div>
+          </>
+          )
+        })}
+      </div>
 
-        
-        <p>{project.longDescription}</p>
-
-
-
-
+      
       </section>
-      </section>
 
 
-      <h1>Project Page</h1>
-      {/* {project.name} */}
-      {project.shortDescription}
-      
-      
-
-
-      {project.deployed}
-      {project.github}
-      
-      
-      
-      {project.image2}
     </>
   )
 }

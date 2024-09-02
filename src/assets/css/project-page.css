@@ -1,19 +1,7 @@
-.flex {
-  display: flex;
-}
-
-.flex img {
-  width: 50%;
-}
-
 .info-container {
   display: grid;
   grid-template-columns: auto 40%;
   gap: 50px;
-}
-
-.text-group {
-
 }
 
 .btn-container2 {
@@ -21,4 +9,18 @@
   grid-template-columns: auto auto;
   gap: 16px;
   margin-top: 20px
+}
+
+.main-img {
+  width: 100%;
+  border-radius: 20px;
+  border: 10px solid var(--light);
+  margin: 20px 0; 
+}
+
+.grid-img {
+  aspect-ratio: 4/3;
+  background-size: cover;
+  border-radius: 20px;
+  border: 10px solid var(--light);
 }
