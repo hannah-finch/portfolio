@@ -1,6 +1,6 @@
 // LOOK UP: React link to top of page (currently links leave page scrolled when new content is shown, since it's technically single page)
 
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 import '../assets/css/project-page.css'
 import projectData from '../../public/project-data.json'
@@ -10,10 +10,32 @@ import projectData from '../../public/project-data.json'
 function ProjectPage() {
   // get project id from url
   const { id } = useParams();
+
   // get project data by index = id
   // this is a temporary solution and should be replaced with a method that doesn't require the project id to equal its index in the projectData array
-
   const project = projectData.projects[id];
+
+  const getTech = (
+    project.technologies.map((tech, index) => {
+      return ( 
+        <li key={index} className="tech">{tech}</li>
+      )
+    })
+  )
+
+  const getImages = (
+    project.moreImages.map(image => {
+      if (!image) {
+        return
+      } else {
+        return ( 
+          <>
+            <div className="grid-img" style={{ backgroundImage: `url(${image})` }}></div>
+          </>
+        )
+      }
+    })
+  )
 
   return (
     <>
@@ -31,7 +53,7 @@ function ProjectPage() {
             <h3>Details:</h3>
             <p><span className="h2 green">Date: </span>{project.startDate} - {project.endDate}</p>
             <p><span className="h2 green">Objective: <br></br></span>{project.objective}</p>
-            <p><span className="h2 green">Technologies: <br></br></span>{project.technologies}</p>
+            <p><span className="h2 green">Technologies: <br></br></span>{getTech}</p>
             <p><span className="h2 green">My Contribution: <br></br></span>{project.contribution}</p>
           </div>
         </div>
@@ -52,24 +74,12 @@ function ProjectPage() {
       <img className="shadow1 main-img" src={project.image1}></img>
 
       <div className="grid">
-
-        {project.moreImages.map(image => {
-          if (!image) {
-            return
-          } else {
-            return ( 
-              <>
-                <div className="grid-img" style={{ backgroundImage: `url(${image})` }}></div>
-              </>
-            )
-          }
-        })}
+        {getImages}
       </div>
-
-      
+     
       </section>
 
-
+      <Link to="/portfolio">&lt;-- Back to portfolio</Link>
     </>
   )
 }

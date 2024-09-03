@@ -24,3 +24,12 @@
   border-radius: 20px;
   border: 10px solid var(--light);
 }
+
+.tech {
+  background-color: var(--teal);
+  display: inline-block;
+  margin: 2px;
+  padding: 0 6px;
+  border-radius: 10px;
+  font-size: 14px;
+}
