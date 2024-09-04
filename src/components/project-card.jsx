@@ -1,4 +1,4 @@
-import projectData from '../../public/project-data.json'
+import projectData from '../assets/project-data.json'
 import '../assets/css/project-card.css'
 
 import { Link } from 'react-router-dom';

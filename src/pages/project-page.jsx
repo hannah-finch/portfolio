@@ -3,7 +3,7 @@
 import { useParams, Link } from 'react-router-dom';
 
 import '../assets/css/project-page.css'
-import projectData from '../../public/project-data.json'
+import projectData from '../assets/project-data.json'
 
 // Project Page, render information for a single project
 
@@ -52,9 +52,9 @@ function ProjectPage() {
           <div>
             <h3>Details:</h3>
             <p><span className="h2 green">Date: </span>{project.startDate} - {project.endDate}</p>
-            <p><span className="h2 green">Objective: <br></br></span>{project.objective}</p>
+            {/* <p><span className="h2 green">Objective: <br></br></span>{project.objective}</p> */}
             <p><span className="h2 green">Technologies: <br></br></span>{getTech}</p>
-            <p><span className="h2 green">My Contribution: <br></br></span>{project.contribution}</p>
+            {/* <p><span className="h2 green">My Contribution: <br></br></span>{project.contribution}</p> */}
           </div>
         </div>
 
