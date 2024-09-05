@@ -2,6 +2,7 @@
   "projects": [
     {
       "id": 0,
+      "publish": true,
       "name": "Book Buddies",
       "shortDescription": "Book club application to create or join clubs, save books to a group list, and plan upcoming meetings",
       "longDescription": "Book Buddies is a book club application for users to create their own book clubs, join existing book clubs, schedule book club meetings, and add books to the book club library.",
@@ -18,6 +19,7 @@
     },
     {
       "id": 1,
+      "publish": true,
       "name": "Tech Blog",
       "shortDescription": "A CMS style blog site where developers can publish their blog posts and comment on other developers’ posts.",
       "longDescription": "A CMS style blog site where developers can publish their blog posts and comment on other developers’ posts.",
@@ -34,6 +36,7 @@
     },
     {
       "id": 2,
+      "publish": true,
       "name": "PokéLounge",
       "shortDescription": "Add pokémon to a scene and listen to lofi music",
       "longDescription": "A front-end application for users to search for and add pokémon to a scene, and relax to some lofi music. Click a pokémon to hear it's cry, and read a quote. Click and drag a pokémon to the pokéball to remove it",
@@ -50,6 +53,7 @@
     },
     {
       "id": 3,
+      "publish": true,
       "name": "E-Commerce",
       "shortDescription": "Server-side code for an e-commerce website.",
       "longDescription": "This application allows a user to run the server-side of an e-commerce website to add, delete, and update products, categories, and tags, in order to track inventory for their store.",
@@ -66,6 +70,7 @@
     },
     {
       "id": 4,
+      "publish": true,
       "name": "Note Taker",
       "shortDescription": "Note Taker that can be used to write and save notes",
       "longDescription": "Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.",
@@ -82,6 +87,7 @@
     },
     {
       "id": 5,
+      "publish": true,
       "name": "Social Network API",
       "shortDescription": "API for a social network web application",
       "longDescription": "API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. Uses Express.js for routing, a MongoDB database, and the Mongoose ODM",
@@ -95,23 +101,27 @@
       "image1": "https://github.com/hannahschwen/social-network-api/raw/main/assets/images/screenshot1.png",
       "codeImage": "",
       "moreImages": []
-    },
+    }
+
+  ],
+  "unpublished": [
     {
-      "id": 6,
-      "name": "Name",
-      "shortDescription": "short",
-      "longDescription": "long",
-      "objective": "obj",
-      "contribution": "contr",
-      "technologies": ["teasdf","asfd"],
-      "deployed": "depl",
-      "github": "git",
-      "video": "vid",
-      "startDate": "start",
-      "endDate": "end",
-      "image1": "img",
-      "codeImage": "img",
-      "moreImages": ["img"]
+      "id": "",
+      "publish": "",
+      "name": "",
+      "shortDescription": "",
+      "longDescription": "",
+      "objective": "",
+      "contribution": "",
+      "technologies": [],
+      "deployed": "",
+      "github": "",
+      "video": "",
+      "startDate": "",
+      "endDate": "",
+      "image1": "",
+      "codeImage": "",
+      "moreImages": []
     }
   ]
 }

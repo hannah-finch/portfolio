@@ -124,29 +124,41 @@ function ProjectPage() {
   const { id } = useParams();
   const project = projectData.projects[id];
 
-  return (
-    <>
-      <h2 className="nudge-right type-out2">import &#123; <span className="teal">project</span> &#125; from &apos;<span className="green">project-data</span>&apos;;</h2>
-
-      <section className="delay">
-
-        <section className="text-box shadow1">
-          <div className="info-container">
-            <Description {...project}/>
-            <Details {...project} />
-          </div>
-          <Buttons {...project} />
+  if (project && project.publish == true) {
+    return (
+      <>
+        <h2 className="nudge-right type-out2">import &#123; <span className="teal">project</span> &#125; from &apos;<span className="green">project-data</span>&apos;;</h2>
+  
+        <section className="delay">
+  
+          <section className="text-box shadow1">
+            <div className="info-container">
+              <Description {...project}/>
+              <Details {...project} />
+            </div>
+            <Buttons {...project} />
+          </section>
+  
+          <div className="spacer"></div>
+  
+          <ImageSection {...project} />
+  
+          <Link to="/portfolio">&lt;-- Back to portfolio</Link>
+  
         </section>
-
+      </>
+    )
+  } else {
+    return (
+      <>
+        <h1>Error</h1>
+        <h2>This project is unavailable</h2>
         <div className="spacer"></div>
+        <Link to="/portfolio">&lt;-- View portfolio</Link>
+      </>
+    )
+  }
 
-        <ImageSection {...project} />
-
-        <Link to="/portfolio">&lt;-- Back to portfolio</Link>
-
-      </section>
-    </>
-  )
 }
 
 export default ProjectPage;
