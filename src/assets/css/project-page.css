@@ -5,9 +5,7 @@
 }
 
 .btn-container2 {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 16px;
+  display: flex;
   margin-top: 20px
 }
 

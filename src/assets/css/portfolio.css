@@ -5,6 +5,8 @@
   padding: 16px;
   border-radius: 8px;
   transition: .3s;
+  width: 100%;
+  margin: 4px;
 }
 
 .github-link:hover {

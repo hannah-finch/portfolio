@@ -95,6 +95,23 @@
       "image1": "https://github.com/hannahschwen/social-network-api/raw/main/assets/images/screenshot1.png",
       "codeImage": "",
       "moreImages": []
+    },
+    {
+      "id": 6,
+      "name": "Name",
+      "shortDescription": "short",
+      "longDescription": "long",
+      "objective": "obj",
+      "contribution": "contr",
+      "technologies": ["teasdf","asfd"],
+      "deployed": "depl",
+      "github": "git",
+      "video": "vid",
+      "startDate": "start",
+      "endDate": "end",
+      "image1": "img",
+      "codeImage": "img",
+      "moreImages": ["img"]
     }
   ]
 }
