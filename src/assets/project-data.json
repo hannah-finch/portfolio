@@ -14,7 +14,7 @@
       "startDate": "07/16/2024",
       "endDate": "ongoing",
       "image1": "https://github.com/hannahschwen/book-buddies/raw/main/public/images/profile.png",
-      "codeImage": "",
+      "codeImage": "https://raw.githubusercontent.com/hirofumii/vscode-theme-rubyblue/images/html_01.png",
       "moreImages": ["https://github.com/hannahschwen/book-buddies/raw/main/public/images/meeting.png", "https://github.com/hannahschwen/book-buddies/raw/main/public/images/bookclub.png"]
     },
     {
@@ -31,7 +31,7 @@
       "startDate": "08/01/2024",
       "endDate": "08/13/2024",
       "image1": "https://github.com/hannahschwen/tech-blog/raw/main/concept/Assets/screenshot1.png",
-      "codeImage": "",
+      "codeImage": "https://raw.githubusercontent.com/hirofumii/vscode-theme-rubyblue/images/html_01.png",
       "moreImages": ["https://github.com/hannahschwen/tech-blog/raw/main/concept/Assets/screenshot4.png", "https://github.com/hannahschwen/tech-blog/raw/main/concept/Assets/screenshot3.png", "https://github.com/hannahschwen/tech-blog/raw/main/concept/Assets/screenshot2.png"]
     },
     {
@@ -48,7 +48,7 @@
       "startDate": "05/21/2024",
       "endDate": "06/03/2024",
       "image1": "https://github.com/hannahschwen/pokelounge/raw/main/assets/images/Pok%C3%A9lounge_main.png",
-      "codeImage": "",
+      "codeImage": "https://raw.githubusercontent.com/hirofumii/vscode-theme-rubyblue/images/html_01.png",
       "moreImages": ["https://github.com/hannahschwen/pokelounge/raw/main/assets/images/Pok%C3%A9lounge_change_scene.png","https://github.com/hannahschwen/pokelounge/raw/main/assets/images/Pok%C3%A9lounge_adding_character.png"]
     },
     {
@@ -65,7 +65,7 @@
       "startDate": "07/19/2024",
       "endDate": "07/31/2024",
       "image1": "https://github.com/hannahschwen/e-commerce/raw/main/concept/Assets/screenshot.png",
-      "codeImage": "",
+      "codeImage": "https://raw.githubusercontent.com/hirofumii/vscode-theme-rubyblue/images/html_01.png",
       "moreImages": []
     },
     {
@@ -82,7 +82,7 @@
       "startDate": "06/22/2024",
       "endDate": "07/18/2024",
       "image1": "https://github.com/hannahschwen/note-taker/raw/main/assets/images/Note-taker-screenshot.png",
-      "codeImage": "",
+      "codeImage": "https://raw.githubusercontent.com/hirofumii/vscode-theme-rubyblue/images/html_01.png",
       "moreImages": []
     },
     {
@@ -99,7 +99,7 @@
       "startDate": "08/13/2024",
       "endDate": "08/20/2024",
       "image1": "https://github.com/hannahschwen/social-network-api/raw/main/assets/images/screenshot1.png",
-      "codeImage": "",
+      "codeImage": "https://raw.githubusercontent.com/hirofumii/vscode-theme-rubyblue/images/html_01.png",
       "moreImages": []
     }
 
