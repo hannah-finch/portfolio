@@ -11,7 +11,6 @@ const Form = (() => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const [errorMessage, setErrorMessage] = useState('');
   const [nameMessage, setNameMessage] = useState('');
   const [emailMessage, setEmailMessage] = useState('');
   const [messageMessage, setMessageMessage] = useState('');
@@ -24,24 +23,17 @@ const Form = (() => {
     if (inputType === 'senderName') {
       inputValue === '' ? setNameMessage('Field is required') : setNameMessage('');
     } else if (inputType === 'email') {
-      // if (inputValue === '') {
-      //   setEmailMessage('Field is required')
-      // }
-        inputValue === '' ? setEmailMessage('Field is required') : setEmailMessage('');
-        if (!validateEmail(email)) {
-          setEmailMessage('Email is invalid');
-          return;
-        } else if (validateEmail(email)) {
-          setEmailMessage('')
-        }
+      if (inputValue === '') {
+        setEmailMessage('Field is required')
+      } else if (!validateEmail(email)) {
+        setEmailMessage('Email is invalid');
+        return;
+      } else {
+        setEmailMessage('')
+      }
     } else {
       inputValue === '' ? setMessageMessage('Field is required') : setMessageMessage('');
     }
-
-    // if (!validateEmail(email)) {
-    //   setErrorMessage('Email is invalid');
-    //   return;
-    // }
   };
 
   const handleInputChange = (e) => {
@@ -59,34 +51,22 @@ const Form = (() => {
       setMessage(inputValue);
     }
 
-    // if (!senderName || !email || !message) {
-    //   setErrorMessage('Field is required');
-    // } else {
-    //   setErrorMessage('');
-    // }
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-
-    // Check for valid email
-    if (!validateEmail(email)) {
-      setErrorMessage('Email is invalid');
-      return;
-    }
 
     // Alert the user, clear the inputs
     alert(`Thanks for your message, ${senderName}!`);
     setSenderName('');
     setEmail('');
     setMessage('');
-    setErrorMessage('');
+
   };
 
   return (
     <div>
       <form onSubmit={handleFormSubmit}>
-        <label htmlFor="senderName">{nameMessage}</label>
         <input
           value={senderName}
           name="senderName"
@@ -95,7 +75,7 @@ const Form = (() => {
           type="text"
           placeholder="Name"
         />
-        <label htmlFor="email">{emailMessage}</label>
+        <label htmlFor="senderName">{nameMessage}</label><br></br>
         <input
           value={email}
           name="email"
@@ -104,7 +84,7 @@ const Form = (() => {
           type="text"
           placeholder="email"
         />
-        <label htmlFor="message">{messageMessage}</label>
+        <label htmlFor="email">{emailMessage}</label><br></br>
         <input
           value={message}
           name="message"
@@ -113,6 +93,7 @@ const Form = (() => {
           type="text"
           placeholder="Message"
         />
+        <label htmlFor="message">{messageMessage}</label><br></br>
         <button type="submit">
           Submit
         </button>
@@ -121,7 +102,7 @@ const Form = (() => {
       Name: {senderName} <br></br>
       Email: {email} <br></br>
       Message: {message} <br></br>
-      Error: {errorMessage}
+
     </div>
   );
 })
