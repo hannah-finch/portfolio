@@ -1,5 +1,7 @@
-import '../assets/css/contact.css'
+import '../assets/css/contact.css';
 import { useState } from 'react';
+
+import { validateEmail } from '../utils/helpers';
 
 // Contact section = contact form with name, email, message... when you move cursor out of one of the form fields without entering text, receive a notification that this field is required... verify email and notify if valid or invalid
 
@@ -8,7 +10,39 @@ const Form = (() => {
   const [senderName, setSenderName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+
   const [errorMessage, setErrorMessage] = useState('');
+  const [nameMessage, setNameMessage] = useState('');
+  const [emailMessage, setEmailMessage] = useState('');
+  const [messageMessage, setMessageMessage] = useState('');
+
+  const handleBlur = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    if (inputType === 'senderName') {
+      inputValue === '' ? setNameMessage('Field is required') : setNameMessage('');
+    } else if (inputType === 'email') {
+      // if (inputValue === '') {
+      //   setEmailMessage('Field is required')
+      // }
+        inputValue === '' ? setEmailMessage('Field is required') : setEmailMessage('');
+        if (!validateEmail(email)) {
+          setEmailMessage('Email is invalid');
+          return;
+        } else if (validateEmail(email)) {
+          setEmailMessage('')
+        }
+    } else {
+      inputValue === '' ? setMessageMessage('Field is required') : setMessageMessage('');
+    }
+
+    // if (!validateEmail(email)) {
+    //   setErrorMessage('Email is invalid');
+    //   return;
+    // }
+  };
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -24,42 +58,58 @@ const Form = (() => {
     } else {
       setMessage(inputValue);
     }
+
+    // if (!senderName || !email || !message) {
+    //   setErrorMessage('Field is required');
+    // } else {
+    //   setErrorMessage('');
+    // }
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
     // Check for valid email
-
+    if (!validateEmail(email)) {
+      setErrorMessage('Email is invalid');
+      return;
+    }
 
     // Alert the user, clear the inputs
     alert(`Thanks for your message, ${senderName}!`);
     setSenderName('');
     setEmail('');
     setMessage('');
+    setErrorMessage('');
   };
 
   return (
     <div>
       <form onSubmit={handleFormSubmit}>
+        <label htmlFor="senderName">{nameMessage}</label>
         <input
           value={senderName}
           name="senderName"
           onChange={handleInputChange}
+          onBlur={handleBlur}
           type="text"
           placeholder="Name"
         />
+        <label htmlFor="email">{emailMessage}</label>
         <input
           value={email}
           name="email"
           onChange={handleInputChange}
+          onBlur={handleBlur}
           type="text"
           placeholder="email"
         />
+        <label htmlFor="message">{messageMessage}</label>
         <input
           value={message}
           name="message"
           onChange={handleInputChange}
+          onBlur={handleBlur}
           type="text"
           placeholder="Message"
         />
@@ -71,6 +121,7 @@ const Form = (() => {
       Name: {senderName} <br></br>
       Email: {email} <br></br>
       Message: {message} <br></br>
+      Error: {errorMessage}
     </div>
   );
 })
