@@ -1,11 +1,14 @@
 import '../assets/css/contact.css';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 import { validateEmail } from '../utils/helpers';
 
 // Contact section = contact form with name, email, message... when you move cursor out of one of the form fields without entering text, receive a notification that this field is required... verify email and notify if valid or invalid
 
 const Form = (() => {
+  // use this for sending to email
+  const form = useRef();
   // set state variables using `useState`
   const [senderName, setSenderName] = useState('');
   const [email, setEmail] = useState('');
@@ -14,27 +17,6 @@ const Form = (() => {
   const [nameMessage, setNameMessage] = useState('');
   const [emailMessage, setEmailMessage] = useState('');
   const [messageMessage, setMessageMessage] = useState('');
-
-  const handleBlur = (e) => {
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
-
-    if (inputType === 'senderName') {
-      inputValue === '' ? setNameMessage('Field is required') : setNameMessage('');
-    } else if (inputType === 'email') {
-      if (inputValue === '') {
-        setEmailMessage('Field is required')
-      } else if (!validateEmail(email)) {
-        setEmailMessage('Email is invalid');
-        return;
-      } else {
-        setEmailMessage('')
-      }
-    } else {
-      inputValue === '' ? setMessageMessage('Field is required') : setMessageMessage('');
-    }
-  };
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -50,23 +32,50 @@ const Form = (() => {
     } else {
       setMessage(inputValue);
     }
+  };
 
+  const handleBlur = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    if (inputType === 'senderName') {
+      inputValue === '' ? setNameMessage('Name is required') : setNameMessage('');
+    } else if (inputType === 'email') {
+      if (inputValue === '') {
+        setEmailMessage('Email is required')
+      } else if (!validateEmail(email)) {
+        setEmailMessage('Email is invalid');
+        return;
+      } else {
+        setEmailMessage('')
+      }
+    } else {
+      inputValue === '' ? setMessageMessage('Message is required') : setMessageMessage('');
+    }
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+
+    // send to my email
+    emailjs.sendForm('service_jd32mue', 'template_z2aucda', form.current, 'gx05LR7FLJTXQRaXp')
+    .then((result) => {
+      console.log('SUCCESS!', result.text);
+    }, (error) => {
+      console.log('FAILED...', error.text);
+    });
 
     // Alert the user, clear the inputs
     alert(`Thanks for your message, ${senderName}!`);
     setSenderName('');
     setEmail('');
     setMessage('');
-
   };
 
   return (
     <div>
-      <form onSubmit={handleFormSubmit}>
+      <form ref={form} onSubmit={handleFormSubmit}>
         <input
           value={senderName}
           name="senderName"
@@ -74,6 +83,7 @@ const Form = (() => {
           onBlur={handleBlur}
           type="text"
           placeholder="Name"
+          required="true"
         />
         <label htmlFor="senderName">{nameMessage}</label><br></br>
         <input
@@ -83,18 +93,20 @@ const Form = (() => {
           onBlur={handleBlur}
           type="text"
           placeholder="email"
+          required="true"
         />
         <label htmlFor="email">{emailMessage}</label><br></br>
-        <input
+        <textarea
           value={message}
           name="message"
           onChange={handleInputChange}
           onBlur={handleBlur}
           type="text"
           placeholder="Message"
+          required="true"
         />
         <label htmlFor="message">{messageMessage}</label><br></br>
-        <button type="submit">
+        <button className="submit-btn" type="submit">
           Submit
         </button>
       </form>
@@ -117,7 +129,7 @@ function Contact() {
     <section className="text-box shadow1">
 
       <h3>Contact Me</h3>
-
+      <div className="spacer"></div>
       <Form />
 
 

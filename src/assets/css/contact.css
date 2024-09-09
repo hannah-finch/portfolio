@@ -1,0 +1,44 @@
+label {
+  font-size: 14px;
+
+  background-color: var(--red);
+  padding: 0px 4px;
+}
+
+input, textArea {
+  line-height: 1.5;
+  border-radius: 4px;
+  border: 2px solid white;
+  font-family: Quicksand, Helvetica, sans-serif;
+  font-size: 16px;
+  outline: none;
+}
+
+textArea {
+  height: 180px;
+  resize: none;
+}
+
+input:focus, textArea:focus {
+
+  background-color: #ccdde6;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-btn {
+  border: none;
+  border-radius: 10px;
+  background-color: var(--green);
+  color: white;
+  height: 40px;
+  border-radius: 3px;
+  transition: .3s;
+}
+
+.submit-btn:hover {
+  background-color: var(--teal);
+}
