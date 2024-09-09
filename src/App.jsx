@@ -1,4 +1,6 @@
 import { Outlet } from 'react-router-dom';
+import ScrollToTop from './components/scroll-to-top.jsx'
+
 
 import Header from './components/header.jsx'
 import Footer from './components/footer.jsx'
@@ -8,6 +10,7 @@ function App() {
 
   return (
     <>
+      <ScrollToTop />
       <Header />
       <main>
         <Hero />
