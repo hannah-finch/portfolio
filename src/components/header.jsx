@@ -1,4 +1,6 @@
 import { NavLink } from 'react-router-dom';
+import standInResume from '../components/stand-in-resume.pdf'
+
 
 // Will use Link components from react-router-dom to conditionally render the different sections
 // Click a link = highlight active link, url changes, corresponding section displays
@@ -19,9 +21,12 @@ function Header() {
         <NavLink to={'/contact'}className={({ isActive }) => (isActive ? "active-link" : "normal-link")}>
           .contact()
         </NavLink>
-        <NavLink to={'/resume'}className={({ isActive }) => (isActive ? "active-link" : "normal-link")}>
+        <a href={standInResume} target="_blank" className={({ isActive }) => (isActive ? "active-link" : "normal-link")}>
           .resume()
-        </NavLink>
+        </a>
+        {/* <NavLink to={'/resume'}className={({ isActive }) => (isActive ? "active-link" : "normal-link")}>
+          .resume()
+        </NavLink> */}
       </nav>
     </header>
   )

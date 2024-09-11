@@ -83,7 +83,7 @@ const Form = (() => {
           onBlur={handleBlur}
           type="text"
           placeholder="Name"
-          required="true"
+          required
         />
         <label htmlFor="senderName">{nameMessage}</label><br></br>
         <input
@@ -93,7 +93,7 @@ const Form = (() => {
           onBlur={handleBlur}
           type="text"
           placeholder="email"
-          required="true"
+          required
         />
         <label htmlFor="email">{emailMessage}</label><br></br>
         <textarea
@@ -103,7 +103,7 @@ const Form = (() => {
           onBlur={handleBlur}
           type="text"
           placeholder="Message"
-          required="true"
+          required
         />
         <label htmlFor="message">{messageMessage}</label><br></br>
         <button className="submit-btn" type="submit">
@@ -111,9 +111,9 @@ const Form = (() => {
         </button>
       </form>
 
-      Name: {senderName} <br></br>
+      {/* Name: {senderName} <br></br>
       Email: {email} <br></br>
-      Message: {message} <br></br>
+      Message: {message} <br></br> */}
 
     </div>
   );

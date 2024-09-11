@@ -1,4 +1,5 @@
 import '../assets/css/resume.css'
+import standInResume from '../components/stand-in-resume.pdf'
 
 // Resume section = link to download resume and list of my proficiencies
 
@@ -10,7 +11,10 @@ function Resume() {
     <section className="delay">
 
     <section className="text-box shadow1">
-      <h3>Something</h3>
+      <h3>Resume</h3>
+
+      <a href = {standInResume} target = "_blank">RESUME</a>
+
     </section>  
     
     </section>

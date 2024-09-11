@@ -6,12 +6,6 @@ import '../assets/css/about.css';
 // About me section = photo and bio
 
 
-/*
-
-{`class ${literal}`}
-
-*/
-
 function About() {
 
   return (
@@ -56,15 +50,15 @@ function About() {
           <li>React</li>
           <li>Bootstrap</li>
           <li>Tailwind</li>
+        <div className="spacer"></div>
         <h3>back-end skills:</h3>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>jQuery</li>
-          <li>Responsive Design</li>
-          <li>React</li>
-          <li>Bootstrap</li>
-          <li>Tailwind</li>
+          <li>API&apos;s</li>
+          <li>Node</li>
+          <li>Express</li>
+          <li>MySQL & Sequelize</li>
+          <li>MongoDB & Mongoose</li>
+          <li>REST</li>
+          <li>GraphQL</li>
       </div>
     </section>
     
