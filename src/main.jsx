@@ -8,7 +8,6 @@ import Error from './pages/error.jsx'
 import About from './pages/about.jsx'
 import Portfolio from './pages/portfolio.jsx'
 import Contact from './pages/contact.jsx'
-import Resume from './pages/resume.jsx'
 import ProjectPage from './pages/project-page.jsx'
 
 const router = createBrowserRouter([
