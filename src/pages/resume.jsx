@@ -1,4 +1,3 @@
-import '../assets/css/resume.css'
 import standInResume from '../components/stand-in-resume.pdf'
 
 // Resume section = link to download resume and list of my proficiencies

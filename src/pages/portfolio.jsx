@@ -1,4 +1,3 @@
-import '../assets/css/portfolio.css'
 import ProjectCard from '../components/project-card.jsx'
 
 
@@ -17,7 +16,7 @@ function Portfolio() {
       </section>
 
       <a className="github-link" href='https://github.com/hannahschwen' target="_blank">
-        View more work on GitHub -->
+        View more work on GitHub --&gt;
       </a>
 
     </section>  

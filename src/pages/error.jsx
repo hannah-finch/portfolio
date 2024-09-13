@@ -1,5 +1,3 @@
-import '../assets/css/error.css'
-
 import { useRouteError } from 'react-router-dom';
 
 // import Header from '../../components/header/header.jsx'
@@ -14,7 +12,6 @@ export default function ErrorPage() {
       {/* <Header /> */}
       <div>
         <h1>Oops!</h1>
-        <p>Page does not exist</p>
         <p>
           <i>{error.statusText || error.message}</i>
         </p>
